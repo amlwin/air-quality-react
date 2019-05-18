@@ -11,6 +11,7 @@
     "react-scripts": "3.0.1",
     "styled-components": "^4.2.0"
   },
+  "homepage" : "https://bannercoe.github.io/air-quality-react",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
