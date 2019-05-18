@@ -269,7 +269,6 @@ const SearchBar = ({ onSearch, fetchInitialLocation }) => {
               <Col xs={24}>
                 <FormItem validateStatus={errors.city ? 'error' : ''} help={errors.city}>
                   <AutoComplete
-                    dataSource={COUNTRIES}
                     filterOption={(inputValue, option) =>
                       option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
                     }
@@ -287,7 +286,6 @@ const SearchBar = ({ onSearch, fetchInitialLocation }) => {
               <Col xs={24}>
                 <FormItem validateStatus={errors.state ? 'error' : ''} help={errors.state}>
                   <AutoComplete
-                    dataSource={COUNTRIES}
                     filterOption={(inputValue, option) =>
                       option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
                     }

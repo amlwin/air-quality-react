@@ -37,9 +37,11 @@ const handelFormSubmit = async (formVal, setResultData) => {
     let temp = Object.assign({}, initialState)
     temp.loading = true
     setResultData(temp)
+    let val = Object.assign({}, formVal)
+    delete val.endpoint
     const response = await AqiApi.get(formVal.endpoint, {
       params: {
-        ...formVal,
+        ...val,
       },
     })
     temp = {
