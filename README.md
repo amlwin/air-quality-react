@@ -12,18 +12,23 @@ This is a Progressive Web-app  in which people can check air pollution index and
 
  - we can make auto complete with available city and state on input text, by make network request at the start of the app.
 
-## How to install
-firstly, install brew.
+## Prerequisites
+Node version should be 10
 
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+## Api
+The app's api is base on [AirVisual](https://www.airvisual.com/). I'm using **community api** , there is limited request per day. When request count is reached maximum, please create account and get a `apk_key` on [AirVisual](https://www.airvisual.com/). And replace it on `api_key` where `src/api/AqiAp.js`.
 
-and then install node v10
-```
-brew install node@10
-```
-```
-brew link node@10
-```
+## Dependencies
+
+- axios: promise based HTTP client for the browser and node.js
+
+- formik: state based form management for react.
+
+- antd :  Ant-Design for beautiful components and layout
+
+- styled-components: to create reusable components with dynamic class styling
+
+## Available Scripts
 And go the project directory and install required dependencies by
 
     npm install i
@@ -32,8 +37,6 @@ And go the project directory and install required dependencies by
   
 
 ### `npm start`
-
-  
 
 Runs the app in the development mode.<br>
 
